@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="menu">
+        <button id="clearButton" class="menuButton">
+            Clear Canvas
+        </button>
+
+        <div class="dropdown">
+            <button id="createButton" class="menuButton">
+                Create ▾
+            </button>
+
+            <div class="dropdownContent">
+                <button id="createPolygonButton">
+                    Polygon
+                </button>
+            </div>
+        </div>
+
+        <div class="dropdown">
+    <button id="editButton" class="menuButton">
+        Edit ▾
+    </button>
+
+    <div class="dropdownContent">
+
+        <div class="dropdown">
+            <button id="transformButton">
+                Transform ▸
+            </button>
+
+            <div class="dropdownContent">
+                <button id="translateButton">
+                    Translate
+                </button>
+
+                <button id="rotateButton">
+                    Rotate
+                </button>
+
+                <button id="scaleButton">
+                    Scale
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </div>
+
+    <canvas
+        id="canvas"
+        width="1000"
+        height="1000">
+    </canvas>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
