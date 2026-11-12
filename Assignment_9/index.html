@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Initialize pyramid</legend>
+        <div>
+            <fieldset>
+                <legend>Position</legend>
+                <label for="positionX">
+                    X 
+                    <input type="range" id="positionX" min="-10" max="10" step="0.1" value="0">
+                    <output id="positionXValue" for="positionX">0</output>
+                </label>
+
+                <label for="positionY">
+                    Y 
+                    <input type="range" id="positionY" min="-10" max="10" step="0.1" value="0">
+                    <output id="positionYValue" for="positionY">0</output>
+                </label>
+
+                <label for="positionZ">
+                    Z 
+                    <input type="range" id="positionZ" min="-10" max="10" step="0.1" value="0">
+                    <output id="positionZValue" for="positionZ">0</output>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Scale</legend>
+                <label for="scaleX">
+                    X 
+                    <input type="range" id="scaleX" min="0.1" max="10" step="0.1" value="1">
+                    <output id="scaleXValue" for="scaleX">1</output>
+                </label>
+
+                <label for="scaleY">
+                    Y 
+                    <input type="range" id="scaleY" min="0.1" max="10" step="0.1" value="1">
+                    <output id="scaleYValue" for="scaleY">1</output>
+                </label>
+
+                <label for="scaleZ">
+                    Z 
+                    <input type="range" id="scaleZ" min="0.1" max="10" step="0.1" value="1">
+                    <output id="scaleZValue" for="scaleZ">1</output>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Rotation (degrees)</legend>
+                <label for="rotationX">
+                    X 
+                    <input type="range" id="rotationX" min="-180" max="180" step="1" value="0">
+                    <output id="rotationXValue" for="rotationX">0</output>
+                </label>
+
+                <label for="rotationY">
+                    Y 
+                    <input type="range" id="rotationY" min="-180" max="180" step="1" value="0">
+                    <output id="rotationYValue" for="rotationY">0</output>
+                </label>
+
+                <label for="rotationZ">
+                    Z 
+                    <input type="range" id="rotationZ" min="-180" max="180" step="1" value="0">
+                    <output id="rotationZValue" for="rotationZ">0</output>
+                </label>
+            </fieldset>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Rates of change per second</legend>
+        <div>
+            <fieldset>
+                <legend>Position</legend>
+                <label for="positionRateX">
+                    X 
+                    <input type="range" id="positionRateX" min="-5" max="5" step="0.1" value="0">
+                    <output id="positionRateXValue" for="positionRateX">0</output>
+                </label>
+
+                <label for="positionRateY">
+                    Y 
+                    <input type="range" id="positionRateY" min="-5" max="5" step="0.1" value="0">
+                    <output id="positionRateYValue" for="positionRateY">0</output>
+                </label>
+
+                <label for="positionRateZ">
+                    Z 
+                    <input type="range" id="positionRateZ" min="-5" max="5" step="0.1" value="0">
+                    <output id="positionRateZValue" for="positionRateZ">0</output>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Scale</legend>
+                <label for="scaleRateX">
+                    X 
+                    <input type="range" id="scaleRateX" min="-2" max="2" step="0.1" value="0">
+                    <output id="scaleRateXValue" for="scaleRateX">0</output>
+                </label>
+
+                <label for="scaleRateY">
+                    Y 
+                    <input type="range" id="scaleRateY" min="-2" max="2" step="0.1" value="0">
+                    <output id="scaleRateYValue" for="scaleRateY">0</output>
+                </label>
+
+                <label for="scaleRateZ">
+                    Z 
+                    <input type="range" id="scaleRateZ" min="-2" max="2" step="0.1" value="0">
+                    <output id="scaleRateZValue" for="scaleRateZ">0</output>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Rotation (degrees)</legend>
+                <label for="rotationRateX">
+                    X 
+                    <input type="range" id="rotationRateX" min="-180" max="180" step="1" value="0">
+                    <output id="rotationRateXValue" for="rotationRateX">0</output>
+                </label>
+
+                <label for="rotationRateY">
+                    Y 
+                    <input type="range" id="rotationRateY" min="-180" max="180" step="1" value="0">
+                    <output id="rotationRateYValue" for="rotationRateY">0</output>
+                </label>
+                
+                <label for="rotationRateZ">
+                    Z 
+                    <input type="range" id="rotationRateZ" min="-180" max="180" step="1" value="0">
+                    <output id="rotationRateZValue" for="rotationRateZ">0</output>
+                </label>
+            </fieldset>
+        </div>
+    </fieldset>
+
+    <label for="colorPicker">Pyramid color:</label>
+    <input type="color" id="colorPicker" value="#ff0000">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "./node_modules/three/build/three.module.js",
+            "three/addons/": "./node_modules/three/examples/jsm/"
+        }
+    }
+    </script>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
